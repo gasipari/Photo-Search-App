@@ -18,15 +18,26 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wk0-aO-WbA">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="51" width="600" height="549"/>
                             </scrollView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9RB-Of-buB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="o1b-sP-QlC"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Wk0-aO-WbA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="2b3-Es-QRc"/>
-                            <constraint firstItem="Wk0-aO-WbA" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="UUb-Vb-MpV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Wk0-aO-WbA" secondAttribute="trailing" constant="-16" id="Vvb-2z-CL8"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wk0-aO-WbA" secondAttribute="bottom" id="Y9z-xs-jxs"/>
+                            <constraint firstItem="Wk0-aO-WbA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="1ve-bx-gbD"/>
+                            <constraint firstItem="9RB-Of-buB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="3no-FR-jHJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wk0-aO-WbA" secondAttribute="bottom" id="Dbb-s5-h8H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wk0-aO-WbA" secondAttribute="trailing" constant="-16" id="Sp9-3L-YTK"/>
+                            <constraint firstItem="Wk0-aO-WbA" firstAttribute="top" secondItem="9RB-Of-buB" secondAttribute="bottom" constant="7" id="VOt-sR-3my"/>
+                            <constraint firstItem="Wk0-aO-WbA" firstAttribute="top" secondItem="9RB-Of-buB" secondAttribute="bottom" constant="7" id="jE9-wd-ir0"/>
+                            <constraint firstItem="9RB-Of-buB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="k9S-MC-wzh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9RB-Of-buB" secondAttribute="trailing" constant="-16" id="wR2-Fd-2RF"/>
                         </constraints>
                     </view>
                     <connections>
